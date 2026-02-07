@@ -1,0 +1,33 @@
+.main-ctr,
+.header,
+.main,
+.footer {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+.main-ctr {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.header,
+.footer {
+  flex: 1;
+  padding: 15px;
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  flex: 8;
+  padding: 15px;
+  margin: 10px;
+}
