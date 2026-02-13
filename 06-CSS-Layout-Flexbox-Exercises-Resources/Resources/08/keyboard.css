@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b6e7f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: monospace;
+
+  padding: 3em;
+}
+
+.keyboard-ctr {
+  background-color: #ddd;
+  border: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  /* width: 100%; */
+  border-radius: 0.9em;
+  box-shadow: 0 0.2em 0 0 #bbb;
+}
+
+.row {
+  display: flex;
+  gap: 1em;
+}
+
+.key {
+  background-color: white;
+  border: solid black 1px;
+  padding: 1.5em 1.7em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.2em 0 0 #bbb;
+  text-align: center;
+  position: relative;
+}
+
+.grow {
+  flex: 1 1 auto;
+}
+
+.special {
+  background-color: #eee;
+}
+
+.keyboard-ctr .key:active {
+  top: 2px;
+  box-shadow: 0 0.5em 0 0 #bbb;
+}
+
+.keyboard-ctr .enter {
+  border-bottom-right-radius: 0;
+}
+
+.keyboard-ctr .key.enter::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 2.2em;
+
+  /* top: 0px; */
+  position: absolute;
+  background-color: inherit;
+  border: solid black 1px;
+  padding: 1em 2.5em;
+  border-radius: 0.3em;
+
+  right: -1px;
+  top: 100%;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  box-shadow: inherit;
+}
