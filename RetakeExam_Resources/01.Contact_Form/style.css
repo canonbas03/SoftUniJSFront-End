@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font:
+    12px/1.5 "Source Sans 3",
+    sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+body {
+  background: #f6f6f6;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+a {
+  color: #585858;
+}
+
+.container {
+  /* border: solid 1px red; */
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  max-width: 1280px;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+aside {
+  flex: 0 0 260px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #585858;
+}
+
+form {
+  padding-top: 2em;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 2em;
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 0.2em;
+  background: #585858;
+  color: #fff;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin-bottom: 4em;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1.5em;
+}
+
+.socials {
+  padding-top: 2em;
+  display: flex;
+  gap: 0.4em;
+  flex-wrap: wrap;
+}
+
+.socials li {
+  flex: 0 0 5em;
+  aspect-ratio: 3/2;
+  display: flex;
+  border: 1px solid #ccc;
+  line-height: 1;
+  border-radius: 0.1em;
+}
+
+.socials li a {
+  flex: 1 1 auto;
+  display: flex;
+  font-size: 1.4em;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  gap: 2em;
+}
+
+.footer p {
+  font-weight: 300;
+}
