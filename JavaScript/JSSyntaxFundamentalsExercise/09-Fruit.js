@@ -4,7 +4,7 @@ function solve(fruitType, weightInGrams, pricePerKg) {
   const neededMoney = pricePerKg * weightInKg;
 
   console.log(
-    `I need $${neededMoney.toFixed(2)} to buy ${weightInKg.toFixed(2)} ${fruitType}.`,
+    `I need $${neededMoney.toFixed(2)} to buy ${weightInKg.toFixed(2)} kilograms ${fruitType}.`,
   );
 }
 
