@@ -5,7 +5,7 @@
 function orderCalc(order, qty) {
   let totalPrice = 0;
   switch (order) {
-    case "coffe":
+    case "coffee":
       totalPrice = qty * 1.5;
       break;
     case "water":
