@@ -12,7 +12,7 @@ function calculate(num1, num2, operation) {
     case "subtract":
       result = subtract(num1, num2);
       break;
-    case "multipy":
+    case "multiply":
       result = multiply(num1, num2);
       break;
     case "divide":
