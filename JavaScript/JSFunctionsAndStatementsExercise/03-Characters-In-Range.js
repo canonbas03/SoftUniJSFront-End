@@ -23,4 +23,4 @@ function solve(...characters) {
   }
 }
 
-solve("a", "m");
+solve("a", "c");
