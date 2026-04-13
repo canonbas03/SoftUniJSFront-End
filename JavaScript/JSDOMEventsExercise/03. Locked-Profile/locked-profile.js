@@ -16,16 +16,16 @@ function solve() {
 
     let isLocked = lockRadioBtn.checked;
 
-    if (!isLocked) {
+    if (isLocked) {
+      return;
+    }
+
+    if (currentShowBtn.textContent === "Show more") {
       hiddenFields.classList.remove("active");
       currentShowBtn.textContent = "Show less";
-      currentShowBtn.classList.remove("active");
-      currentShowBtn.disabled = true;
     } else {
       hiddenFields.classList.add("active");
       currentShowBtn.textContent = "Show more";
-      currentShowBtn.classList.add("active");
-      currentShowBtn.disabled = false;
     }
   }
 }
