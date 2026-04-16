@@ -30,7 +30,7 @@ function solve() {
     articleEl.appendChild(namePEl);
 
     const numberPEl = document.createElement("p");
-    numberPEl.textContent = `number:${number}`;
+    numberPEl.textContent = `phone:${number}`;
     articleEl.appendChild(numberPEl);
 
     const categoryPEl = document.createElement("p");
